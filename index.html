@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="icon" type="image/x-icon" href="/cloudy.png">
+</head>
+
+<body>
+  <div class="timeinfo"><span id="p1"></span> Hrs</div>
+<script>
+	var date = new Date();
+  var mins =date.getMinutes();
+  if(mins<10){
+    mins = "0"+mins;
+  }
+	var current_time = date.getHours()+":"+mins;
+	document.getElementById("p1").innerHTML = current_time;
+</script>
+  <div class="container">
+    <header>
+      <input type="text" autocomplete="on" class="search-box" placeholder="Enter city name" />
+    </header>
+    <button type="submit" class="bn" id="btn" onclick="setQuery()">Search</button>
+    <main id="wedisplay" style="display: none;">
+      <section class="location">
+        <div class="city"></div>
+        <div class="date"></div>
+      </section>
+      <div class="current">
+        <div class="temp"><span>°c</span></div>
+        <div class="weather"></div>
+        <div class="hi-low">°c / °c</div>
+      </div>
+    </main>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
