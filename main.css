@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+.search-box{
+  box-shadow: 0 0 10px black;
+}
 .timeinfo{
   box-shadow: 0 0 18px rgb(255, 174, 81);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -22,6 +25,7 @@
   border: 2px solid aliceblue;
 }
 .bn{
+  box-shadow: 0 0 8px black;
   border: 2px solid white;
   font-size: 18px;
   font-weight: bolder;
@@ -83,14 +87,14 @@ header input {
   background-color: rgba(255, 255, 255, 0.626);
   border-radius: 0px 16px 0px 16px;
   border-bottom: 3px solid rgb(255, 255, 255);
-
-  color: #313131;
+  color: #000000;
   font-size: 20px;
   font-weight: 300;
   transition: 0.2s ease-out;
 }
 
 header input:focus {
+  box-shadow: 0 0 0 black;
   background-color: rgb(255, 255, 255);
 }
 
