@@ -51,3 +51,11 @@ function dateBuilder (d) {
 
   return `${day} ${date} ${month} ${year}`;
 }
+
+var date = new Date();
+  var mins =date.getMinutes();
+  if(mins<10){
+    mins = "0"+mins;
+  }
+	var current_time = date.getHours()+":"+mins;
+	document.getElementById("p1").innerHTML = current_time;

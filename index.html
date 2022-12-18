@@ -7,24 +7,18 @@
   <title>Weather App</title>
   <link rel="stylesheet" href="main.css" />
   <link rel="icon" type="image/x-icon" href="/cloudy.png">
+  <!-- <meta http-equiv="refresh" content="10"> -->
 </head>
 
 <body>
   <div class="timeinfo"><span id="p1"></span> Hrs</div>
-<script>
-	var date = new Date();
-  var mins =date.getMinutes();
-  if(mins<10){
-    mins = "0"+mins;
-  }
-	var current_time = date.getHours()+":"+mins;
-	document.getElementById("p1").innerHTML = current_time;
-</script>
   <div class="container">
-    <header>
-      <input type="text" autocomplete="off" class="search-box " placeholder="Enter city name" />
-    </header>
-    <button type="submit" class="bn" id="btn" onclick="setQuery()">Search</button>
+    <form action="" method="post">
+      <header>
+        <input type="text" autocomplete="off" class="search-box" placeholder="Enter city name" required>
+      </header>
+      <button type="submit" class="bn" id="btn" onclick="setQuery()">Search</button>
+    </form>
     <main id="wedisplay" style="display: none;">
       <section class="location">
         <div class="city"></div>
