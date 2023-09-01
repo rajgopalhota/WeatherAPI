@@ -1,54 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather App</title>
-  <link rel="stylesheet" href="main.css" />
-  <link rel="icon" type="image/x-icon" href="/cloudy.png">
-  <!-- <meta http-equiv="refresh" content="10"> -->
+  <link rel="stylesheet" href="./assets/main.css">
+  <link rel="icon" type="image/x-icon" href="./assets/cloudy.png">
 </head>
-
 <body>
-  <div class="area" >
-    <ul class="circles">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-    </ul>
-</div >
   <div class="timeinfo"><span id="p1"></span> Hrs</div>
   <div class="container">
-    <form action="" method="post">
+    <form>
       <header>
-        <input type="text" autocomplete="off" class="search-box" placeholder="Enter city name" required>
+        <input
+          type="text"
+          autocomplete="off"
+          class="search-box"
+          placeholder="Enter city name"
+          required
+        />
       </header>
-      <button type="submit" class="bn" id="btn" onclick="setQuery()">Search</button>
+      <button type="button" class="bn" id="btn">Search</button>
     </form>
   </div>
-    <div class="container-dis">
-    <main id="wedisplay" style="display: none;">
+  <div class="container-dis">
+    <main id="wedisplay" style="display: none">
       <section class="location">
         <div class="city"></div>
         <div class="date"></div>
       </section>
       <div class="current">
-        <div class="temp"><span>°c</span></div>
+        <div class="temp"><span>°C</span></div>
         <div class="weather"></div>
-        <div class="hi-low">°c / °c</div>
+        <div class="hi-low">°C / °C</div>
       </div>
     </main>
+    <div class="error-message" style="display: none;"></div>
   </div>
 
-  <script src="main.js"></script>
+  <script src="./assets/main.js"></script>
 </body>
-
 </html>
