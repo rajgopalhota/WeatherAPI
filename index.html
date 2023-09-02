@@ -1,43 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weather App</title>
-  <link rel="stylesheet" href="./assets/main.css">
-  <link rel="icon" type="image/x-icon" href="./assets/cloudy.png">
-</head>
-<body>
-  <div class="timeinfo"><span id="p1"></span> Hrs</div>
-  <div class="container">
-    <form>
-      <header>
-        <input
-          type="text"
-          autocomplete="off"
-          class="search-box"
-          placeholder="Enter city name"
-          required
-        />
-      </header>
-      <button type="button" class="bn" id="btn">Search</button>
-    </form>
-  </div>
-  <div class="container-dis">
-    <main id="wedisplay" style="display: none">
-      <section class="location">
-        <div class="city"></div>
-        <div class="date"></div>
-      </section>
-      <div class="current">
-        <div class="temp"><span>°C</span></div>
-        <div class="weather"></div>
-        <div class="hi-low">°C / °C</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./assets/main.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/cloudy.png" />
+    <script
+      src="https://kit.fontawesome.com/1deaab12ff.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        WeatherApp &nbsp;<i class="fa-solid fa-cloud-sun-rain"></i>
       </div>
-    </main>
-    <div class="error-message" style="display: none;"></div>
-  </div>
+      <ul>
+        <li>
+          <a href="/"><i class="fa-solid fa-house"></i>&nbsp;Home</a>
+        </li>
+        <li>
+          <a href="https://rajgopalhota.netlify.app/"
+            ><i class="fa-solid fa-address-card"></i>&nbsp;About Me</a
+          >
+        </li>
+        <li>
+          <a
+            href="mailto:rajgopalhotanrg@gmail.com? subject=Contact to Rajgopal!"
+            target="_blank"
+          >
+            <i class="fa-brands fa-telegram"></i>&nbsp;Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <section>
+      <div class="timeinfo"><span id="p1"></span> Hrs</div>
+      <div class="container">
+        <form>
+          <header>
+            <input
+              type="text"
+              autocomplete="off"
+              class="search-box"
+              placeholder="Enter city name"
+              required
+            />
+          </header>
+          <button type="button" class="bn" id="btn">Search</button>
+        </form>
+      </div>
+      <div class="container-dis">
+        <main id="wedisplay" style="display: none">
+          <section class="location">
+            <div class="city"></div>
+            <div class="date"></div>
+          </section>
+          <div class="current">
+            <div class="temp"><span>°C</span></div>
+            <div class="weather"></div>
+            <div class="hi-low">°C / °C</div>
+          </div>
+        </main>
+      </div>
+      <div class="error-message" style="display: none"></div>
+    </section>
+    <footer>
+      Made with ❤️ by
+      <a href="https://github.com/rajgopalhota">@RAJGOPAL HOTA</a>
+    </footer>
 
-  <script src="./assets/main.js"></script>
-</body>
+    <script src="./assets/main.js"></script>
+  </body>
 </html>

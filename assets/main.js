@@ -33,6 +33,7 @@ function getResults(query) {
 }
 
 function displayResults(weather) {
+  // console.log(weather)
   const city = document.querySelector('.location .city');
   const date = document.querySelector('.location .date');
   const temp = document.querySelector('.current .temp');
@@ -41,7 +42,7 @@ function displayResults(weather) {
 
   city.innerText = `${weather.name}, ${weather.sys.country}`;
   const now = new Date();
-  date.innerText = dateBuilder(now);
+  date.innerText = "Time:  " + dateBuilder(now);
   temp.innerHTML = `${Math.round(weather.main.temp)}<span>°C</span>`;
   weatherEl.innerText = weather.weather[0].main;
   hiLow.innerText = `${Math.round(weather.main.temp_min)}°C / ${Math.round(weather.main.temp_max)}°C`;
