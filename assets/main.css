@@ -18,19 +18,20 @@ body {
 
 /* Styling for the search box */
 .search-box {
-  padding: 9px 4px 9px 40px;
+  color: white;
+  padding: 9px 40px 9px 40px;
   background: transparent
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E")
     no-repeat 13px center;
   box-shadow: 0 0 10px black;
-  width: 90%;
+  width: 100%;
 }
 
 /* Styling for the time info */
 .timeinfo {
   box-shadow: 0 0 8px rgb(40, 40, 40);
   font-weight: bolder;
-  font-size: 30px;
+  font-size: 2dvw;
   text-align: center;
   padding: 12px 22px;
   width: 13%;
@@ -51,10 +52,8 @@ body {
   color: aliceblue;
   border-radius: 22px;
   background-color: transparent;
-  margin-bottom: 1%;
+  margin-bottom: 3%;
   padding: 6px 22px;
-  position: relative;
-  left: 42%;
 }
 
 /* Hover effect for the search button */
@@ -81,10 +80,11 @@ body {
 
 /* Styling for the main container */
 .container {
-  box-shadow: 0 0 8px rgb(67, 67, 67);
+  text-align: center;
+  box-shadow: rgba(255, 255, 255, 0.472) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.643) 0px 50px 100px -20px, rgba(0, 0, 0, 0.655) 0px 30px 60px -30px;
   border: 2px solid aliceblue;
   border-radius: 12px;
-  margin: auto;
+  margin: 2% auto;
   width: 58vw;
   padding: 12px;
   height: 0%;
@@ -92,15 +92,24 @@ body {
   backdrop-filter: blur(12px);
 }
 
+.container img{
+  width: 20rem;
+}
+.container h1{
+  text-align: left;
+}
+
 /* Styling for the secondary container */
 .container-dis {
-  box-shadow: 0 0 8px rgb(67, 67, 67);
+  box-shadow: rgba(50, 50, 93, 0.729) 0px 50px 100px -20px, rgba(0, 0, 0, 0.824) 0px 30px 60px -30px;
   border-radius: 8px;
   margin: auto;
   margin-top: 1%;
+  margin-bottom: 5%;
   width: 58vw;
   height: 0%;
   background-color: rgba(2, 31, 53, 0.259);
+  border: 2px solid aliceblue;
   backdrop-filter: blur(12px);
 }
 
@@ -109,13 +118,13 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 15px 15px;
+  padding: 2px 15px 15px;
 }
 
 /* Styling for the input field in the header */
 header input {
   width: 100%;
-  max-width: 280px;
+  max-width: 480px;
   padding: 10px 15px;
   border: none;
   outline: none;
@@ -130,6 +139,7 @@ header input {
 
 /* Styling for the input field when focused */
 header input:focus {
+  color: black;
   box-shadow: 0 0 22px aliceblue;
   background-color: rgb(255, 255, 255);
 }
@@ -210,7 +220,7 @@ main {
     overflow-x: hidden;
   }
   .timeinfo {
-    font-size: 16px;
+    font-size: 13px;
     top: 5%;
     left: 5%;
     padding: 6px 22px;
@@ -224,6 +234,7 @@ main {
   .container-dis {
     margin-top: 4%;
     width: 98%;
+    margin-bottom: 5%;
   }
   .bn {
     font-size: 12px;
@@ -314,6 +325,6 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
   display: none;
 }
-section{
+#mainbodycont{
   min-height: 100dvh;
 }
